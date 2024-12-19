@@ -1,74 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Responsive Navbar</title>
-</head>
-<body class="bg-gray-50">
+    <html lang="en">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Logo -->
-      <div class="flex items-center">
-        <img src="/assets/Logo (2).svg" alt="ProductFit" class="h-8">
-      
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Responsive Navbar</title>
+    </head>
 
-      <!-- Navigation Links -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="text-gray-600 hover:text-teal-600">
-          <i class="fas fa-envelope"></i> Contact Us
-        </a>
-        <a href="tel:+78003017927" class="text-gray-600 hover:text-teal-600">
-          <i class="fas fa-phone"></i> +7 800 301-79-27
-        </a>
-        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">
-          НАЧАТЬ ПРОЕКТ
-        </button>
-      </div>
+    <body class="bg-gray-50">
 
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden flex items-center">
-        <button id="menu-btn" class="text-gray-600 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
+        <!-- Navbar -->
+        <nav class="bg-white shadow-md">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="/assets/Logo (2).svg" alt="ProductFit" class="h-8">
 
-    <!-- Mobile Menu -->
-    <div id="menu" class="hidden md:hidden bg-white border-t">
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
-      <a href="tel:+78003017927" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">+7 800 301-79-27</a>
-      <button class="block w-full text-left bg-pink-500 hover:bg-pink-600 text-white px-4 py-2">
-        НАЧАТЬ ПРОЕКТ
-      </button>
-    </div>
-  </nav>
+                </div>
 
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-teal-600">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                    <a href="tel:+78003017927" class="text-gray-600 hover:text-teal-600">
+                        <i class="fas fa-phone"></i> +7 800 301-79-27
+                    </a>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">
+                        НАЧАТЬ ПРОЕКТ
+                    </button>
+                </div>
 
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menu" class="hidden md:hidden bg-white border-t">
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+                <a href="tel:+78003017927" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">+7 800 301-79-27</a>
+                <button class="block w-full text-left bg-pink-500 hover:bg-pink-600 text-white px-4 py-2">
+                    НАЧАТЬ ПРОЕКТ
+                </button>
+            </div>
+        </nav>
+        <section>
+            <div class="container mx-auto justify-center items-center  flex">
+                <img src="/assets/1 1.png" alt="laptop">
+            </div>
+        </section>
+
+        <section class="flex flex-col sm:flex-row justify-center gap-10 sm:gap-28 items-center">
+            <div class="shadow-lg shadow-black w-full sm:w-80 h-96">
+                <img class="w-3/5 sm:w-60 ml-0 sm:ml-7" src="/assets/image 29.png" alt="opengift">
+                <img class="ml-0 sm:ml-4 mt-5" src="/assets/Group 115.png" alt="">
+                <button class="bg-pink-500 mt-5 ml-0 sm:ml-5 hover:bg-pink-600 text-white px-4 py-2 rounded-md w-full sm:w-auto">
+                    УЗНАТЬ СТОИМОСТЬ ПРОЕКТА
+                </button>
+            </div>
+            <div class="text-center sm:text-left">
+                <b class="text-teal-600 text-xl sm:text-3xl">
+                    OpenGift – это система монетизации OpenSource-проектов<br> на основе блокчейна hyperledger
+                    fabric.
+                </b>
+                <p>К разработке платформы было привлечено более 5000 разработчиков. Ее интегрировали с сетью<br>
+                    блокчейнов.
+                    Альфа-версия была запущена в январе 2018 года. OpenGIft был создан для решения проблем,<br>
+                    унаследованных от разработки программного обеспечения. Платформа позволяет компаниям<br>
+                    разделять
+                    расходы на программное обеспечение, а управление проектами является основной функцией,<br>
+                    помогающей в
+                    сотрудничестве.
+                </p>
+                <p>
+                    Для монетизации используются смарт-контракты, чтобы создать пассивный, периодический<br>
+                    потенциал
+                    дохода. Уникальность проекта в видении на разработку с открытым исходным кодом.<br>
+                </p>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </body>
+
+    </html>
+
 </body>
-</html>
 
-</body>
 </html>
