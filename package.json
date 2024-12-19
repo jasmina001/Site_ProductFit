@@ -4,7 +4,7 @@
   "description": "figma",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./src/input.css -o ./public/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jasmina001/Site_ProductFit/issues"
   },
-  "homepage": "https://github.com/jasmina001/Site_ProductFit#readme"
+  "homepage": "https://github.com/jasmina001/Site_ProductFit#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
 }
