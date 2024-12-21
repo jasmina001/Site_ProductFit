@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="/assets/Logo (2).svg" alt="ProductFit" class="h-8">
+
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-teal-600">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </a>
+                <a href="tel:+78003017927" class="text-gray-600 hover:text-teal-600">
+                    <i class="fas fa-phone"></i> +7 800 301-79-27
+                </a>
+                <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">
+                    НАЧАТЬ ПРОЕКТ
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="menu" class="hidden md:hidden bg-white border-t">
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+            <a href="tel:+78003017927" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">+7 800 301-79-27</a>
+            <button class="block w-full text-left bg-pink-500 hover:bg-pink-600 text-white px-4 py-2">
+                НАЧАТЬ ПРОЕКТ
+            </button>
+        </div>
+    </nav>
 </body>
 </html>
